@@ -105,7 +105,6 @@ namespace ElevenNote.Web.Controllers
         {
             var service = CreateNoteService();
 
-            //TODO: Handle failure
             service.DeleteNote(id);
 
             TempData["SaveResult"] = "Your note was deleted!";
