@@ -13,6 +13,9 @@ using ElevenNote.Data;
 
 namespace ElevenNote.Web.Controllers
 {
+#if !DEBUG
+    [RequireHttps]
+#endif
     [Authorize]
     public class AccountController : Controller
     {
